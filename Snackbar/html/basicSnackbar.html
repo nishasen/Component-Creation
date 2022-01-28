@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic snackbar</title>
+    <link href="/Snackbar/css/snackbar.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+    <div class="basic-btn">
+        <button class="display-snackbar" id="basic-btn">Basic snackbar</button>
+        <button class="display-snackbar" id="archived-btn">Archieved message</button>
+        <button class="display-snackbar" id="stacked-btn">Add new label</button>
+    </div>
+    <div class="container appear" id="basic-snackbar">
+        <div class="snack-text">Your photo has been archived.</div>
+        <div class="btn-side">UNDO</div>
+        <i class="btn-icon fa fa-close"></i>
+    </div>
+    <div class="container appear archived" id="archived-snackbar">
+        <div class="snack-text">Can't send photo. Retry in 5 seconds.</div>
+        <div class="btn-side">RETRY</div>
+        <i class="btn-icon fa fa-close"></i>
+    </div>
+    <div class="container appear stacked" id="stacked-snackbar">
+        <div class="snack-text">This item already has the label "travel". You can add a new label.</div>
+        <div class="below-div">
+            <div class="btn-side">Add new label</div>
+            <i class="btn-icon fa fa-close"></i>
+        </div>
+    </div>
+    <script src="/Snackbar/js/app.js" type="text/javascript"></script>
+</body>
+</html>
+
+<!-- <div>&#10006</div> -->

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+    --brand-name: 'Nunito', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+.navbar {
+    background-color: #EEEEEE;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.brand-icon {
+    width: 5rem;
+}
+
+.navbar-brand {
+    display: grid;
+    grid-template-columns: 6rem auto; 
+    margin-right: auto;  
+    cursor: pointer; 
+}
+
+.brand-name {
+    font-size: 4rem;
+    font-family: var(--brand-name);
+    font-weight: bold;
+}
+
+.profile {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.btn {
+    border: 0;
+    font-family: var(--brand-name);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-right-content {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.btn-icon {
+    width: 0.7rem;
+}
+
+.btn-text:hover, .dropdown:hover .dropbtn {
+    background-color: #FBDF63;
+    border-radius: 2.7rem;
+    padding-bottom: 0rem
+}
+
+.dropdown {
+    position: relative;
+    display: inline-flex;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FBDF63;
+    min-width: 15rem;
+    box-shadow: 0rem 8px 1.6rem 0rem rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 1.5rem;
+    top: 5.3rem;
+}
+
+.side-links {
+    right: 0.7rem
+}
+
+.links {
+    color: black;
+    padding: 1.2rem 1.6rem;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid;
+}
+
+.links:last-child {
+    border-bottom: 0
+}
+
+.links:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-right-content {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .nav-right-content {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+  }

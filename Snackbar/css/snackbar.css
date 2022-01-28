@@ -1,0 +1,94 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+.basic-btn {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem
+}
+
+.display-snackbar {
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: #1572A1;
+    cursor: pointer;
+    color: white;
+}
+
+.container, .appear, #basic-snackbar.show, #archived-snackbar.show, #stacked-snackbar.show {
+    background-color: #333333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    font-family: monospace;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 33rem;
+    height: 1.5rem;
+    bottom: 1rem; 
+    left: 1rem;   
+}
+
+.appear {
+    visibility: hidden;
+}
+
+#basic-snackbar.show, #archived-snackbar.show, #stacked-snackbar.show {
+    visibility: visible;
+}
+
+.archived, #archived-snackbar.show {
+    width: 40rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stacked, #stacked-snackbar.show {
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    width: 55rem;
+    height: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-icon {
+    padding: 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 4px;
+    color: white;  
+    border-radius: 50%;
+    border: 1px solid #333; 
+}
+
+.btn-icon, .btn-side {
+    cursor: pointer;
+}
+
+#stacked-snackbar.show .btn-icon {
+    top: 4rem;
+    right: 2rem;
+}
+
+.btn-side {
+    color: #BB86FC;
+    margin-right: 4rem
+}
+
+.btn-icon:hover {
+    background-color: #414141;
+}
+

@@ -1,0 +1,93 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 62.5%;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color:palegoldenrod;
+}
+
+.badges {
+    display: flex;
+    flex-direction: column;  
+    gap: 3rem;
+    
+}
+
+.boxes {
+    background-color:cadetblue;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    max-width: 40rem;
+}
+
+.badge-box, .num-text, .text, .icon {
+    position: relative;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-pos, .text-content{
+    position: relative;
+    width: 5rem;
+}
+
+.num {
+    font-size: 1.2rem;
+    background-color: blueviolet;
+    border-radius: 50%;
+    padding: 0.7rem;
+    position: absolute; 
+    top: 0;
+    z-index: 99999;
+}
+
+.icon {
+    width: 4rem;     
+}
+
+.text-content {
+    display: flex;
+}
+
+.badge-with-text .num {
+    font-size: 1.7rem;
+    border-radius: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    top: 0; 
+}
+
+.badge-over-icons .num { 
+    right: 0;
+}
+
+.badge-over-button .num { 
+    left: -2rem;
+    top: -1rem;
+}
+
+.badge-over-button-right .num {
+    right : -3rem;
+    top: -1rem;
+}
+
+.side .num {
+    top: 1rem;
+    left: 1rem;
+}
+
+.num-text {
+    width: 5rem;
+}
+
+.text {
+    font-size: 3rem;
+}
+

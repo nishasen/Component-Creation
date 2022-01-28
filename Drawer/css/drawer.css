@@ -1,0 +1,122 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    /* height: 100vh; */
+    display: flex;
+    /* border: 2px solid grey */
+    /* overflow-y: auto; */
+}
+
+/* Drawer css */
+
+.drawer {
+    width: 25rem;
+    border-right: 1px solid #E0E0E0;
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    padding: 0.5rem 1.5rem;
+    position: sticky;
+    top: 0rem;
+    background-color: white;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.drawer p {
+    width: 18rem;
+    color: grey;
+    font-size: 1.5rem;
+}
+
+.subtitles {
+    display: flex;
+    flex-direction: column;
+    /* max-height: 50rem;
+    white-space: nowrap;
+    overflow-y: auto;
+    flex: 2; */
+}
+
+.child {
+    border-bottom: 1px solid #E0E0E0; 
+}
+
+.child:last-child {
+    border-bottom: none;
+    padding-bottom: 3.3rem
+}
+
+.child p {
+    padding-left: 1.5rem;
+}
+
+.icon-buttons {
+    padding: 1.3rem 1.5rem;
+    display: flex;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.icons {
+    font-size: 2rem;
+}
+
+.icon-buttons:hover, .icon-buttons:focus {
+    color:blueviolet;
+    background-color: #EDE1FD;
+    border-radius: 1rem;
+    margin: 0 0.5rem;
+}
+
+/* Side Contents */
+
+.content {
+    flex-grow: 1;
+    /* overflow: auto;
+    flex: 5; */
+}
+
+.header {
+    background-color: blueviolet;
+    font-size: 2.5rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.body {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+/* @media only screen and (max-width: 300px){
+    .subtitles {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        flex: 2;
+        height: 40px;
+    } 
+} */
+

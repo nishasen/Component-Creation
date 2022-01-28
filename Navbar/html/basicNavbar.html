@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Navbar</title>
+    <link href="/Navbar/css/navbar.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="/Navbar/icons/n.png" class="brand-icon">
+            <div class="brand-name">Navbar</div>
+        </div>
+        <div class="nav-right-content">
+            <button class="btn btn-text">Home</button>
+            <div class="dropdown">
+                <button class="btn dropbtn btn-text">Projects <img src="/Navbar/icons/arrow-down-sign-to-navigate.png" class="btn-icon"></button>
+                <div class="dropdown-content">
+                    <a href="#" class="links">Project 1</a>
+                    <a href="#" class="links">Project 2</a>
+                    <a href="#" class="links">Project 3</a>
+                </div>
+            </div>
+            <button class="btn btn-text">Contacts</button>
+            <button class="btn btn-text">User</button>
+            <div class="dropdown">
+                <button class="btn profile-img"><img src="/Navbar/icons/profile.jpg" class="profile"></button>
+                <div class="dropdown-content  side-links">
+                    <a href="#" class="links">View profile</a>
+                    <a href="#" class="links">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
